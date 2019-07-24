@@ -1,0 +1,114 @@
+﻿@model Admisiones.Models.PerfilUsuario
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PerfilUsuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimerNombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimerNombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SegundoNombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SegundoNombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimerApellido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimerApellido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SegundoApellido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SegundoApellido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LugarNacimiento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LugarNacimiento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Genero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Genero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoCivil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EstadoCivil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CorreoPrimario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CorreoPrimario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CorreoSecundario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CorreoSecundario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoIdentificacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoIdentificacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroIdentificacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumeroIdentificacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoPrimario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoPrimario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoSecundario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoSecundario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contrasena)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contrasena)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PerfilusuarioId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
