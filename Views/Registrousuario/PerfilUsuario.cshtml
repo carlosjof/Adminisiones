@@ -4,32 +4,30 @@
     ViewData["Title"] = "PerfilUsuario";
 }
 
-<h2>PerfilUsuario</h2>
-
-<h4>PerfilUsuarioVM</h4>
+<h2>Registro de Postulante</h2>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="PerfilUsuario">
+        <form asp-action="PerfilUsuario" asp-controller="Registrousuario">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.PrimerNombre" class="control-label"></label>
-                <input asp-for="PerfilUsuario.PrimerNombre" class="form-control" />
+                <input id="PrimerNombre" asp-for="PerfilUsuario.PrimerNombre" placeholder="Tu primer apellido" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.PrimerNombre" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.SegundoNombre" class="control-label"></label>
-                <input asp-for="PerfilUsuario.SegundoNombre" class="form-control" />
+                <input asp-for="PerfilUsuario.SegundoNombre" placeholder="Tu segundo nombre" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.SegundoNombre" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.PrimerApellido" class="control-label"></label>
-                <input asp-for="PerfilUsuario.PrimerApellido" class="form-control" />
+                <input asp-for="PerfilUsuario.PrimerApellido" placeholder="Tu primer apellido" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.PrimerApellido" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.SegundoApellido" class="control-label"></label>
-                <input asp-for="PerfilUsuario.SegundoApellido" class="form-control" />
+                <input asp-for="PerfilUsuario.SegundoApellido" placeholder="Tu segundo apellido" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.SegundoApellido" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -39,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.LugarNacimiento" class="control-label"></label>
-                <input asp-for="PerfilUsuario.LugarNacimiento" class="form-control" />
+                <input asp-for="PerfilUsuario.LugarNacimiento" placeholder="Tu lugar de nacimiento" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.LugarNacimiento" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -67,12 +65,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.CorreoPrimario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.CorreoPrimario" class="form-control" />
+                <input asp-for="PerfilUsuario.CorreoPrimario" placeholder="correo@gmail.com" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.CorreoPrimario" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.CorreoSecundario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.CorreoSecundario" class="form-control" />
+                <input asp-for="PerfilUsuario.CorreoSecundario" placeholder="correo@gmail.com" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.CorreoSecundario" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -87,7 +85,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.NumeroIdentificacion" class="control-label"></label>
-                <input asp-for="PerfilUsuario.NumeroIdentificacion" class="form-control" />
+                <input asp-for="PerfilUsuario.NumeroIdentificacion" placeholder="000-0000000-0" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.NumeroIdentificacion" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -133,37 +131,42 @@
             </div>
             <div class="form-group">
                 <label asp-for="Direccion.Residencial" class="control-label"></label>
-                <input asp-for="Direccion.Residencial" class="form-control" />
+                <input asp-for="Direccion.Residencial" placeholder="Plaza las palmas" class="form-control" />
                 <span asp-validation-for="Direccion.Residencial" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Direccion.Descripcion" class="control-label"></label>
-                <input asp-for="Direccion.Descripcion" class="form-control" />
+                <input asp-for="Direccion.Descripcion" placeholder="Calle/Avenida" class="form-control" />
                 <span asp-validation-for="Direccion.Descripcion" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Direccion.Numero" class="control-label"></label>
-                <input asp-for="Direccion.Numero" class="form-control" />
+                <input asp-for="Direccion.Numero" class="form-control" placeholder="Casa/Edificio" />
                 <span asp-validation-for="Direccion.Numero" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.Celular" class="control-label"></label>
-                <input asp-for="PerfilUsuario.Celular" class="form-control" />
+                <input asp-for="PerfilUsuario.Celular" class="form-control" placeholder="Ejemplo:8091234567" />
                 <span asp-validation-for="PerfilUsuario.Celular" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.TelefonoPrimario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.TelefonoPrimario" class="form-control" />
+                <input asp-for="PerfilUsuario.TelefonoPrimario" placeholder="Ejemplo:8091234567" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.TelefonoPrimario" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.TelefonoSecundario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.TelefonoSecundario" class="form-control" />
+                <input asp-for="PerfilUsuario.TelefonoSecundario" placeholder="Ejemplo:8091234567" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.TelefonoSecundario" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PerfilUsuario.Contrasena" class="control-label"></label>
-                <input asp-for="PerfilUsuario.Contrasena" class="form-control" />
+                <input id="Contra" asp-for="PerfilUsuario.Contrasena" class="form-control" />
+                <span asp-validation-for="PerfilUsuario.Contrasena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerfilUsuario.Contrasena" class="control-label">Confirmar Contrasena</label>
+                <input type="password" id="confirmacionContra" name="ConfirmacionContrasena" class="form-control" />
                 <span asp-validation-for="PerfilUsuario.Contrasena" class="text-danger"></span>
             </div>
 
@@ -181,3 +184,31 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script>
+    $("#provincia").change(function () {
+        $.ajax({
+            url: "/Registrousuario/Sectores",
+            type: "POST",
+            dataType: "json",
+            data: { provincia: $("#provincia").val() },
+            success: function (resp) {
+                console.log(resp);
+
+                var respuesta = "";
+
+                for (var i = 0; i < resp.length; i++) {
+                    respuesta += "<option value='" + resp[i].value + ">" + resp[i].text + "</option>";
+                }
+
+                document.getElementById("Sector").innerHTML = respuesta;
+            }
+        });
+    });
+
+    if ($("#provincia").val() == null && $("#Sector").val() == null) {
+        alert("Las contraseas no coinciden");
+    }
+</script>
+
+<script src="~/js/ConfirmacionContrasena.js" asp-append-version="true"></script>

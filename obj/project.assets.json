@@ -12535,11 +12535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CarlosJOF\\source\\repos\\Admisiones\\Admisiones\\Admisiones.csproj",
+      "projectUniqueName": "C:\\Users\\CarlosJOF\\Desktop\\ClonAdminisiones\\Adminisiones\\Admisiones.csproj",
       "projectName": "Admisiones",
-      "projectPath": "C:\\Users\\CarlosJOF\\source\\repos\\Admisiones\\Admisiones\\Admisiones.csproj",
+      "projectPath": "C:\\Users\\CarlosJOF\\Desktop\\ClonAdminisiones\\Adminisiones\\Admisiones.csproj",
       "packagesPath": "C:\\Users\\CarlosJOF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CarlosJOF\\source\\repos\\Admisiones\\Admisiones\\obj\\",
+      "outputPath": "C:\\Users\\CarlosJOF\\Desktop\\ClonAdminisiones\\Adminisiones\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
