@@ -3,6 +3,23 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    overflow-x:hidden;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto {
+    position: absolute;
+    font-size: 4em;
+    top: 50%;
+    left: 100%;
+    color: #023f75;
+    transform: translate(-50%, -50%);
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* Wrapping element */

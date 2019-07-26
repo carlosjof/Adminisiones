@@ -7,178 +7,210 @@
 <h2>Registro de Postulante</h2>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form asp-action="PerfilUsuario" asp-controller="Registrousuario">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.PrimerNombre" class="control-label"></label>
-                <input id="PrimerNombre" asp-for="PerfilUsuario.PrimerNombre" placeholder="Tu primer apellido" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.PrimerNombre" class="text-danger"></span>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.PrimerNombre" class="control-label"></label>
+                    <input id="PrimerNombre" asp-for="PerfilUsuario.PrimerNombre" placeholder="Tu primer apellido" class="form-control" required/>
+                    <span asp-validation-for="PerfilUsuario.    " class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.SegundoNombre" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.SegundoNombre" placeholder="Tu segundo nombre" class="form-control" />
+                    <span asp-validation-for="PerfilUsuario.SegundoNombre" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.SegundoNombre" class="control-label"></label>
-                <input asp-for="PerfilUsuario.SegundoNombre" placeholder="Tu segundo nombre" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.SegundoNombre" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.PrimerApellido" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.PrimerApellido" placeholder="Tu primer apellido" class="form-control" required/>
+                    <span asp-validation-for="PerfilUsuario.PrimerApellido" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.SegundoApellido" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.SegundoApellido" placeholder="Tu segundo apellido" class="form-control" />
+                    <span asp-validation-for="PerfilUsuario.SegundoApellido" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.PrimerApellido" class="control-label"></label>
-                <input asp-for="PerfilUsuario.PrimerApellido" placeholder="Tu primer apellido" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.PrimerApellido" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.FechaNacimiento" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.FechaNacimiento" class="form-control" />
+                    <span asp-validation-for="PerfilUsuario.FechaNacimiento" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.LugarNacimiento" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.LugarNacimiento" placeholder="Tu lugar de nacimiento" class="form-control" required/>
+                    <span asp-validation-for="PerfilUsuario.LugarNacimiento" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.SegundoApellido" class="control-label"></label>
-                <input asp-for="PerfilUsuario.SegundoApellido" placeholder="Tu segundo apellido" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.SegundoApellido" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.Genero" class="control-label"></label>
+                    @*<input asp-for="PerfilUsuario.Genero" class="form-control" />*@
+                    <select class="form-control" asp-for="PerfilUsuario.Genero" required>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                    </select>
+                    <span asp-validation-for="PerfilUsuario.Genero" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.EstadoCivil" class="control-label"></label>
+                    @*<input asp-for="PerfilUsuario.EstadoCivil" class="form-control" />*@
+                    <select class="form-control" asp-for="PerfilUsuario.EstadoCivil">
+                        <option value="Soltero(a)">Soltero(a)</option>
+                        <option value="Casado(a)">Casado(a)</option>
+                        <option value="Divorciado(a)">Divorciado(a)</option>
+                        <option value="Vuido(a)">Vuido(a)</option>
+                        <option value="Separado(a)">Separado(a)</option>
+                        <option value="Union Libre">Union Libre</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <span asp-validation-for="PerfilUsuario.EstadoCivil" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.FechaNacimiento" class="control-label"></label>
-                <input asp-for="PerfilUsuario.FechaNacimiento" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.FechaNacimiento" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.CorreoPrimario" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.CorreoPrimario" placeholder="correo@gmail.com" class="form-control" required/>
+                    <span asp-validation-for="PerfilUsuario.CorreoPrimario" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.CorreoSecundario" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.CorreoSecundario" placeholder="correo@gmail.com" class="form-control" />
+                    <span asp-validation-for="PerfilUsuario.CorreoSecundario" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.LugarNacimiento" class="control-label"></label>
-                <input asp-for="PerfilUsuario.LugarNacimiento" placeholder="Tu lugar de nacimiento" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.LugarNacimiento" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.TipoIdentificacion" class="control-label"></label>
+                    @*<input asp-for="PerfilUsuario.TipoIdentificacion" class="form-control" />*@
+                    <select class="form-control" asp-for="PerfilUsuario.TipoIdentificacion">
+                        <option value="Cedula">Cedula</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="No. de Residencia (Extranjeros)">No. de Residencia (Extranjeros)</option>
+                    </select>
+                    <span asp-validation-for="PerfilUsuario.TipoIdentificacion" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.NumeroIdentificacion" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.NumeroIdentificacion" placeholder="000-0000000-0" class="form-control" required/>
+                    <span asp-validation-for="PerfilUsuario.NumeroIdentificacion" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.Genero" class="control-label"></label>
-                @*<input asp-for="PerfilUsuario.Genero" class="form-control" />*@
-                <select class="form-control" asp-for="PerfilUsuario.Genero">
-                    <option value="Femenino">Femenino</option>
-                    <option value="Masculino">Masculino</option>
-                </select>
-                <span asp-validation-for="PerfilUsuario.Genero" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Direccion.PaisOrigen" class="control-label"></label>
+                    <select class="form-control" asp-for="Direccion.PaisOrigen">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bolivia ">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Haití">Haití</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="México">México</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                        <option value="República Dominicana">República Dominicana</option>
+                        <option value="Trinidad y Tobago">Trinidad y Tobago</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Provincia.Nombre" class="control-label"></label>
+                    <select asp-for="Provincia.Nombre" asp-items="@ViewBag.Provincia" id="provincia" class="form-control"></select>
+                    <span asp-validation-for="Provincia.Nombre" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.EstadoCivil" class="control-label"></label>
-                @*<input asp-for="PerfilUsuario.EstadoCivil" class="form-control" />*@
-                <select class="form-control" asp-for="PerfilUsuario.EstadoCivil">
-                    <option value="Soltero(a)">Soltero(a)</option>
-                    <option value="Casado(a)">Casado(a)</option>
-                    <option value="Divorciado(a)">Divorciado(a)</option>
-                    <option value="Vuido(a)">Vuido(a)</option>
-                    <option value="Separado(a)">Separado(a)</option>
-                    <option value="Union Libre">Union Libre</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <span asp-validation-for="PerfilUsuario.EstadoCivil" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Sector.Nombre" class="control-label"></label>
+                    <select asp-for="Sector.Nombre" id="Sector" class="form-control"></select>
+                    <span asp-validation-for="Sector.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Direccion.Residencial" class="control-label"></label>
+                    <input asp-for="Direccion.Residencial" placeholder="Plaza las palmas" class="form-control" />
+                    <span asp-validation-for="Direccion.Residencial" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.CorreoPrimario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.CorreoPrimario" placeholder="correo@gmail.com" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.CorreoPrimario" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Direccion.Descripcion" class="control-label"></label>
+                    <input asp-for="Direccion.Descripcion" placeholder="Calle/Avenida" class="form-control" required/>
+                    <span asp-validation-for="Direccion.Descripcion" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Direccion.Numero" class="control-label"></label>
+                    <input asp-for="Direccion.Numero" class="form-control" placeholder="Casa/Edificio" />
+                    <span asp-validation-for="Direccion.Numero" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.CorreoSecundario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.CorreoSecundario" placeholder="correo@gmail.com" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.CorreoSecundario" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.Celular" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.Celular" class="form-control" placeholder="Ejemplo:8091234567" />
+                    <span asp-validation-for="PerfilUsuario.Celular" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.TelefonoPrimario" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.TelefonoPrimario" placeholder="Ejemplo:8091234567" class="form-control" required/>
+                    <span asp-validation-for="PerfilUsuario.TelefonoPrimario" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.TipoIdentificacion" class="control-label"></label>
-                @*<input asp-for="PerfilUsuario.TipoIdentificacion" class="form-control" />*@
-                <select class="form-control" asp-for="PerfilUsuario.TipoIdentificacion">
-                    <option value="Cedula">Cedula</option>
-                    <option value="Pasaporte">Pasaporte</option>
-                    <option value="No. de Residencia (Extranjeros)">No. de Residencia (Extranjeros)</option>
-                </select>
-                <span asp-validation-for="PerfilUsuario.TipoIdentificacion" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label asp-for="PerfilUsuario.TelefonoSecundario" class="control-label"></label>
+                    <input asp-for="PerfilUsuario.TelefonoSecundario" placeholder="Ejemplo:8091234567" class="form-control" />
+                    <span asp-validation-for="PerfilUsuario.TelefonoSecundario" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.NumeroIdentificacion" class="control-label"></label>
-                <input asp-for="PerfilUsuario.NumeroIdentificacion" placeholder="000-0000000-0" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.NumeroIdentificacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Direccion.PaisOrigen" class="control-label"></label>
-                <select class="form-control" asp-for="Direccion.PaisOrigen">
-                    <option value="Argentina">Argentina</option>
-                    <option value="Bahamas">Bahamas</option>
-                    <option value="Bolivia ">Bolivia</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Canadá">Canadá</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Costa Rica">Costa Rica</option>
-                    <option value="Cuba">Cuba</option>
-                    <option value="Dominica">Dominica</option>
-                    <option value="Ecuador">Ecuador</option>
-                    <option value="El Salvador">El Salvador</option>
-                    <option value="Estados Unidos">Estados Unidos</option>
-                    <option value="Guatemala">Guatemala</option>
-                    <option value="Haití">Haití</option>
-                    <option value="Honduras">Honduras</option>
-                    <option value="Jamaica">Jamaica</option>
-                    <option value="México">México</option>
-                    <option value="Nicaragua">Nicaragua</option>
-                    <option value="Panamá">Panamá</option>
-                    <option value="Paraguay">Paraguay</option>
-                    <option value="Perú">Perú</option>
-                    <option value="República Dominicana">República Dominicana</option>
-                    <option value="Trinidad y Tobago">Trinidad y Tobago</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Venezuela">Venezuela</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Provincia.Nombre" class="control-label"></label>
-                <select asp-for="Provincia.Nombre" asp-items="@ViewBag.Provincia" id="provincia" class="form-control"></select>
-                <span asp-validation-for="Provincia.Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sector.Nombre" class="control-label"></label>
-                <select asp-for="Sector.Nombre" id="Sector" class="form-control"></select>
-                <span asp-validation-for="Sector.Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Direccion.Residencial" class="control-label"></label>
-                <input asp-for="Direccion.Residencial" placeholder="Plaza las palmas" class="form-control" />
-                <span asp-validation-for="Direccion.Residencial" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Direccion.Descripcion" class="control-label"></label>
-                <input asp-for="Direccion.Descripcion" placeholder="Calle/Avenida" class="form-control" />
-                <span asp-validation-for="Direccion.Descripcion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Direccion.Numero" class="control-label"></label>
-                <input asp-for="Direccion.Numero" class="form-control" placeholder="Casa/Edificio" />
-                <span asp-validation-for="Direccion.Numero" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.Celular" class="control-label"></label>
-                <input asp-for="PerfilUsuario.Celular" class="form-control" placeholder="Ejemplo:8091234567" />
-                <span asp-validation-for="PerfilUsuario.Celular" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.TelefonoPrimario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.TelefonoPrimario" placeholder="Ejemplo:8091234567" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.TelefonoPrimario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.TelefonoSecundario" class="control-label"></label>
-                <input asp-for="PerfilUsuario.TelefonoSecundario" placeholder="Ejemplo:8091234567" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.TelefonoSecundario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.Contrasena" class="control-label"></label>
-                <input id="Contra" asp-for="PerfilUsuario.Contrasena" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.Contrasena" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PerfilUsuario.Contrasena" class="control-label">Confirmar Contrasena</label>
-                <input type="password" id="confirmacionContra" name="ConfirmacionContrasena" class="form-control" />
-                <span asp-validation-for="PerfilUsuario.Contrasena" class="text-danger"></span>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.Contrasena" class="control-label"></label>
+                    <input id="Contra" asp-for="PerfilUsuario.Contrasena" class="form-control" />
+                    <span asp-validation-for="PerfilUsuario.Contrasena" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="PerfilUsuario.Contrasena" class="control-label">Confirmar Contrasena</label>
+                    <input type="password" id="confirmacionContra" name="ConfirmacionContrasena" class="form-control" />
+                    <span asp-validation-for="PerfilUsuario.Contrasena" class="text-danger"></span>
+                </div>
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-info" />
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

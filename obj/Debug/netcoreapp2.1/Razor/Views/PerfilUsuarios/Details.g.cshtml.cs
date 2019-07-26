@@ -384,7 +384,7 @@ using Admisiones.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(3152, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a2f1cdad2db4b69a7f34e4dfd8cc616", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9983840b52f248aeb2b3a241b599a092", async() => {
                 BeginContext(3211, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -419,7 +419,7 @@ using Admisiones.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(3227, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b1e2ef4c9e0466bbd0aa67b969e70a2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3920836a78e401caba6bfffd559e47d", async() => {
                 BeginContext(3249, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

@@ -66,7 +66,7 @@ using Admisiones.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(125, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20e6d9098d7e42c4b3fcbff1a1844393", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6b85b4378d2434a82b146413ec70fcb", async() => {
                 BeginContext(148, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -416,7 +416,7 @@ using Admisiones.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(3733, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "510fb2f6237448e39ec80648ea1b1d30", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "406132be59b046b8b667a9c6f3e541dc", async() => {
                 BeginContext(3791, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -451,7 +451,7 @@ using Admisiones.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(3819, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3035c08ac0a74402a38bbfcb5cbd5b94", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bccb4ff224544cb8a5e339ab65cd9d8", async() => {
                 BeginContext(3880, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -486,7 +486,7 @@ using Admisiones.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(3911, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a97b5640ea74e83ac4c1d80a8f526a8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "49393656055649eba45d84b5a2769dbb", async() => {
                 BeginContext(3971, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
